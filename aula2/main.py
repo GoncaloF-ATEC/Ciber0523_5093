@@ -1,4 +1,6 @@
-from Pessoa import Pessoa, PessoaC, Morada
+from Pessoa import *
+
+
 
 print("--"*10)
 print("--"*10)
@@ -48,3 +50,35 @@ teste(p, pc)
 
 print(f"p.nome = {p.nome}")
 print(f"pc.nome = {pc.nome}")
+
+
+
+## add varias data classes a uma lista
+
+
+lista = []
+
+lista.append(Ponto(10,10))
+lista.append(Ponto(15,20))
+
+for pt in lista:
+    print(pt)
+
+x = input("x: ")
+y = input("y: ")
+
+
+if x.isnumeric() and y.isnumeric():
+    lista.append(Ponto(int(x), int(y)))
+
+    for pt in lista:
+        print(type(pt.x))
+
+else:
+    print("valores incorretos")
+
+'''
+"10" -> 10
+
+"dez" -> erro
+'''
