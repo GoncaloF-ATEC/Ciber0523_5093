@@ -29,12 +29,13 @@ Pessoa(
 pc = PessoaC("Gonçalo", 37, "teste@sapo.pt")
 print(pc)
 
-
-
+#TODO:
+#FIXME:
 
 print("--"*10)
 print("--"*10)
-def teste(p:Pessoa, pc:PessoaC):
+
+def teste(p: Pessoa, pc: PessoaC):
     p.nome = "João"
     pc.nome = "João"
 
