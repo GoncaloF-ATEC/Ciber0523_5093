@@ -30,6 +30,8 @@ pc = PessoaC("Gonçalo", 37, "teste@sapo.pt")
 print(pc)
 
 
+
+
 print("--"*10)
 print("--"*10)
 def teste(p:Pessoa, pc:PessoaC):
