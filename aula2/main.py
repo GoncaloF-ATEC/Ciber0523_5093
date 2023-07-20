@@ -1,5 +1,5 @@
 from Pessoa import *
-
+from math import pow
 
 
 print("--"*10)
@@ -82,3 +82,12 @@ else:
 
 "dez" -> erro
 '''
+
+
+dist_p1_p2 = lista[0].distance_to(lista[1])
+
+print(dist_p1_p2)
+
+dist_p2_p1 = lista[1].distance_to(lista[0])
+
+print(dist_p2_p1)

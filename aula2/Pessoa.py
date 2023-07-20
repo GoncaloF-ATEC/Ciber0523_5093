@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+from math import sqrt, pow
 @dataclass
 class Morada:
     rua: str
@@ -17,6 +17,12 @@ class Pessoa:
 class Ponto:
     x: int
     y: int
+
+    def distance_to(self, pt2: 'Ponto'):
+        x = pt2.x - self.x
+        y = pt2.y - self.y
+        return sqrt(pow(x, 2) + pow(y, 2))
+
 
 
 class PessoaC:
